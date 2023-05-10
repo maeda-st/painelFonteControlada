@@ -27,7 +27,7 @@ source nome_ambiente/bin/activate
 Com o ambiente ativado instalamos as dependências:
 
 ```text
-pip instal -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Para atualizar o arquivo requirements.txt cada vez que for atualizando pacotes:
