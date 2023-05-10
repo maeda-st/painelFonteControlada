@@ -35,3 +35,11 @@ Para atualizar o arquivo requirements.txt cada vez que for atualizando pacotes:
 ```text
 pip freeze > requirements.txt
 ```
+
+## Com o pacote PyQt6 instalado e o Qt Designer instalado
+
+Com o Qt Designer desenvolta a tela com extensão .ui e em seguida, no direório salvo execute o comando:
+
+```text
+pyuic6 -x arquivo.ui -o arquivo.py
+```

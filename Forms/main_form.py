@@ -12,6 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainForm(object):
     def setupUi(self, MainForm):
         MainForm.setObjectName("MainForm")
+        MainForm.setWindowModality(QtCore.Qt.WindowModality.WindowModal)
         MainForm.resize(480, 320)
 
         self.retranslateUi(MainForm)
