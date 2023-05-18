@@ -12,8 +12,26 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainForm(object):
     def setupUi(self, MainForm):
         MainForm.setObjectName("MainForm")
-        MainForm.setWindowModality(QtCore.Qt.WindowModality.WindowModal)
+        MainForm.setWindowModality(QtCore.Qt.WindowModality.ApplicationModal)
         MainForm.resize(480, 320)
+        self.btMenu = QtWidgets.QPushButton(parent=MainForm)
+        self.btMenu.setGeometry(QtCore.QRect(22, 20, 440, 80))
+        font = QtGui.QFont()
+        font.setPointSize(24)
+        self.btMenu.setFont(font)
+        self.btMenu.setObjectName("btMenu")
+        self.btIniciar = QtWidgets.QPushButton(parent=MainForm)
+        self.btIniciar.setGeometry(QtCore.QRect(20, 110, 440, 80))
+        font = QtGui.QFont()
+        font.setPointSize(24)
+        self.btIniciar.setFont(font)
+        self.btIniciar.setObjectName("btIniciar")
+        self.btTestes = QtWidgets.QPushButton(parent=MainForm)
+        self.btTestes.setGeometry(QtCore.QRect(20, 200, 440, 80))
+        font = QtGui.QFont()
+        font.setPointSize(24)
+        self.btTestes.setFont(font)
+        self.btTestes.setObjectName("btTestes")
 
         self.retranslateUi(MainForm)
         QtCore.QMetaObject.connectSlotsByName(MainForm)
@@ -21,6 +39,9 @@ class Ui_MainForm(object):
     def retranslateUi(self, MainForm):
         _translate = QtCore.QCoreApplication.translate
         MainForm.setWindowTitle(_translate("MainForm", "MainForm"))
+        self.btMenu.setText(_translate("MainForm", "Configurar"))
+        self.btIniciar.setText(_translate("MainForm", "Iniciar"))
+        self.btTestes.setText(_translate("MainForm", "Testes"))
 
 
 if __name__ == "__main__":
