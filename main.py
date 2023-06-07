@@ -1,6 +1,6 @@
 import sys
-from PyQt6.QtWidgets import QApplication, QMainWindow
-from PyQt6.QtCore import Qt
+from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtCore import Qt
 from Forms.main_form import Ui_MainForm
 from Forms.form_teste_saida import Ui_FormTesteSaida
 
